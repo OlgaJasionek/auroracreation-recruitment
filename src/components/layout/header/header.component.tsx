@@ -1,16 +1,19 @@
 import Counter from "../../counter/counter.component";
 import IconButton from "../../icon-button/icon-button.component";
+
 import styles from "./header.module.scss";
 
-const HeaderComponent = () => {
+type Props = {
+  onOpenSideMenu: () => void;
+};
+
+const HeaderComponent = ({ onOpenSideMenu }: Props) => {
   return (
     <div className='container'>
       <header className={styles.wrapper}>
         <div className={styles.content}>
           <IconButton
-            onClick={() => {
-              console.log("cześć");
-            }}
+            onClick={onOpenSideMenu}
             src='/icons/menu.png'
             alt='menu-icon'></IconButton>
           <img src='./icons/logo.png' alt='logo' />

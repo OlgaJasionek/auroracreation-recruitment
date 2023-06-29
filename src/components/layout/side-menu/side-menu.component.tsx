@@ -1,5 +1,6 @@
 import classnames from "classnames";
 import { useEffect } from "react";
+
 import { lockScroll } from "../../../helpers/lockscroll";
 import IconButton from "../../icon-button/icon-button.component";
 
@@ -7,10 +8,8 @@ import styles from "./side-menu.module.scss";
 
 const navLinks = [
   { name: "Home", id: 2, path: "/" },
-  { name: "Portfolio", id: 1, path: "/portfolio" },
-  { name: "O mnie", id: 4, path: "/o-mnie" },
-  // { name: "Oferta", id: 5, path: "/offer" },//TODO: PAGE IN PROGRESS
-  { name: "Kontakt", id: 3, path: "/kontakt" },
+  { name: "Portfolio", id: 1, path: "/" },
+  { name: "Kontakt", id: 3, path: "/" },
 ];
 
 type Props = {
@@ -30,9 +29,7 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
       })}>
       <div className={styles.btn}>
         <IconButton
-          onClick={function (): void {
-            throw new Error("Function not implemented.");
-          }}
+          onClick={onCloseSideMenu}
           src='/icons/close.png'
           alt='close-icon'></IconButton>
       </div>
@@ -40,9 +37,9 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
         <ul className={styles.list}>
           {navLinks.map(link => (
             <li key={link.id} onClick={onCloseSideMenu}>
-              <link className={classnames(styles.linkUnderlink)}>
+              <a href={link.path} className={classnames(styles.linkUnderlink)}>
                 {link.name}
-              </link>
+              </a>
             </li>
           ))}
         </ul>

@@ -1,16 +1,22 @@
+import { useState } from "react";
 import HeaderComponent from "./header/header.component";
 import SideMenu from "./side-menu/side-menu.component";
 
 const LayoutComponent = () => {
+  const [openSideMenu, setOpenSideMenu] = useState(false);
+
+  const openSideMenuHandler = () => {
+    setOpenSideMenu(true);
+  };
+
+  const closeSideMenuHandler = () => {
+    setOpenSideMenu(false);
+  };
+
   return (
     <>
-      <HeaderComponent />
-      <SideMenu
-        isOpen={true}
-        onCloseSideMenu={function (): void {
-          throw new Error("Function not implemented.");
-        }}
-      />
+      <HeaderComponent onOpenSideMenu={openSideMenuHandler} />
+      <SideMenu isOpen={openSideMenu} onCloseSideMenu={closeSideMenuHandler} />
     </>
   );
 };
