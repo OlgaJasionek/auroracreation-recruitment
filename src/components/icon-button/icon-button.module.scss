@@ -1,4 +1,5 @@
 .iconBtn {
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,10 +9,10 @@
   border: none;
   outline: 0;
   cursor: pointer;
+  transition: background-color 1s;
 }
 
 .icon {
   width: 30px;
   height: 30px;
-  padding: 15px;
 }

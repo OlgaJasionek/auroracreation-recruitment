@@ -1,15 +1,22 @@
 import classnames from "classnames";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import { lockScroll } from "../../../helpers/lockscroll";
 import IconButton from "../../icon-button/icon-button.component";
+import SearchBar from "../../search-bar/search-bar.component";
 
 import styles from "./side-menu.module.scss";
 
 const navLinks = [
-  { name: "Home", id: 2, path: "/" },
-  { name: "Portfolio", id: 1, path: "/" },
-  { name: "Kontakt", id: 3, path: "/" },
+  { name: "Kategorie", id: 1, path: "/" },
+  { name: "Nowości", id: 2, path: "/" },
+  { name: "Promocje", id: 3, path: "/" },
+  { name: "Wyprzedaże", id: 4, path: "/" },
+  { name: "Kolekcje sezony", id: 5, path: "/" },
+  { name: "Nasza oferta", id: 6, path: "/" },
+  { name: "Trendy 2018", id: 7, path: "/" },
+  { name: "Blog", id: 8, path: "/" },
 ];
 
 type Props = {
@@ -18,6 +25,8 @@ type Props = {
 };
 
 const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
+  const [activeLinkId, setActiveLinkId] = useState<number>(4);
+
   useEffect(() => {
     lockScroll(isOpen);
   }, [isOpen]);
@@ -33,11 +42,21 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
           src='/icons/close.png'
           alt='close-icon'></IconButton>
       </div>
+      <SearchBar />
       <nav className={styles.nav}>
         <ul className={styles.list}>
           {navLinks.map(link => (
-            <li key={link.id} onClick={onCloseSideMenu}>
-              <a href={link.path} className={classnames(styles.linkUnderlink)}>
+            <li
+              key={link.id}
+              onClick={() => {
+                onCloseSideMenu();
+                setActiveLinkId(link.id);
+              }}>
+              <a
+                href={link.path}
+                className={classnames(styles.link, {
+                  [styles.active]: activeLinkId === link.id,
+                })}>
                 {link.name}
               </a>
             </li>
