@@ -1,4 +1,5 @@
 .wrapper {
+  overflow: auto;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 0.24s;
@@ -26,6 +27,14 @@
   padding: 30px;
 }
 
+.userBtnGroup {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .nav {
   flex: 1;
   height: 100%;
@@ -44,7 +53,6 @@
 }
 
 .list {
-  margin-top: -60px;
   text-align: center;
 
   li {
@@ -57,6 +65,7 @@
   text-transform: uppercase;
   font-weight: bold;
   transition: color 0.7s;
+
   &:hover {
     color: pink;
   }
@@ -64,4 +73,12 @@
 
 .activeLink {
   color: pink;
+}
+
+.contactData {
+  border-top: 0.5px solid #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

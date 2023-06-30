@@ -6,13 +6,13 @@ type Props = {
   alt: string;
 };
 
-const ButtonTextIcon = ({ text, src, alt }: Props) => {
+const TextIcon = ({ text, src, alt }: Props) => {
   return (
-    <button className={styles.btn}>
+    <div className={styles.content}>
       <img src={src} alt={alt} />
       <span>{text}</span>
-    </button>
+    </div>
   );
 };
 
-export default ButtonTextIcon;
+export default TextIcon;

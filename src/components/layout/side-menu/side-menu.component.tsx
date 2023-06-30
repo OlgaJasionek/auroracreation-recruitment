@@ -1,13 +1,13 @@
 import classnames from "classnames";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 import { lockScroll } from "../../../helpers/lockscroll";
-import ButtonTextIcon from "../../text-icon/text-icon.component";
 import IconButton from "../../icon-button/icon-button.component";
 import SearchBar from "../../search-bar/search-bar.component";
 
 import styles from "./side-menu.module.scss";
+import TextIcon from "../../text-icon/text-icon.component";
+import Button from "../../button/button.component";
 
 const navLinks = [
   { name: "Kategorie", id: 1, path: "/" },
@@ -44,12 +44,21 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
           alt='close-icon'></IconButton>
       </div>
       <SearchBar />
-      <div>
-        <ButtonTextIcon
-          text='Zaloguj się'
-          src='/icons/login.png'
-          alt='login-icon'
-        />
+      <div className={styles.userBtnGroup}>
+        <Button>
+          <TextIcon
+            text='Zaloguj się'
+            src='/icons/login.png'
+            alt='login-icon'
+          />
+        </Button>
+        <Button>
+          <TextIcon
+            text='Załóż konto'
+            src='/icons/new-user.png'
+            alt='new-user-icon'
+          />
+        </Button>
       </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
@@ -71,6 +80,14 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
           ))}
         </ul>
       </nav>
+      <div className={styles.contactData}>
+        <TextIcon text='293939098' src='/icons/phone.png' alt='phone-icon' />
+        <TextIcon
+          text='kontakt@aurorabox.pl'
+          src='/icons/mail.png'
+          alt='mail-icon'
+        />
+      </div>
     </div>
   );
 };
