@@ -1,0 +1,13 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid rgb(209, 208, 208);
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  img {
+    margin-right: 10px;
+  }
+}

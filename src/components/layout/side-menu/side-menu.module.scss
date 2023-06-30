@@ -53,6 +53,10 @@
 }
 
 .link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.7s;
   &:hover {
     color: pink;
   }

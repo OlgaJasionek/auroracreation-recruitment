@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import { lockScroll } from "../../../helpers/lockscroll";
+import ButtonTextIcon from "../../text-icon/text-icon.component";
 import IconButton from "../../icon-button/icon-button.component";
 import SearchBar from "../../search-bar/search-bar.component";
 
@@ -43,6 +44,13 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
           alt='close-icon'></IconButton>
       </div>
       <SearchBar />
+      <div>
+        <ButtonTextIcon
+          text='Zaloguj się'
+          src='/icons/login.png'
+          alt='login-icon'
+        />
+      </div>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           {navLinks.map(link => (
