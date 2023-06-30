@@ -13,13 +13,15 @@ const HeaderComponent = ({ onOpenSideMenu }: Props) => {
     <div className='container'>
       <header className={styles.wrapper}>
         <div className={styles.content}>
-          <div className={styles.mobileMenu}>
-            <IconButton
-              onClick={onOpenSideMenu}
-              src='/icons/menu.png'
-              alt='menu-icon'></IconButton>
+          <div className={styles.logo}>
+            <div className={styles.mobileMenu}>
+              <IconButton
+                onClick={onOpenSideMenu}
+                src='/icons/menu.png'
+                alt='menu-icon'></IconButton>
+            </div>
+            <img src='./icons/logo.png' alt='logo' />
           </div>
-          <img src='./icons/logo.png' alt='logo' />
           <div className={styles.userPanel}>
             <div className={styles.searchDesktop}>
               <SearchBar />
