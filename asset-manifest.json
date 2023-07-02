@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd5d8ce8.css",
-    "main.js": "/static/js/main.bb5f41bc.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "index.html": "/index.html",
-    "main.dd5d8ce8.css.map": "/static/css/main.dd5d8ce8.css.map",
-    "main.bb5f41bc.js.map": "/static/js/main.bb5f41bc.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/auroracreation-recruitment/static/css/main.dd5d8ce8.css",
+    "main.js": "/auroracreation-recruitment/static/js/main.0a50951e.js",
+    "static/js/787.28cb0dcd.chunk.js": "/auroracreation-recruitment/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/auroracreation-recruitment/index.html",
+    "main.dd5d8ce8.css.map": "/auroracreation-recruitment/static/css/main.dd5d8ce8.css.map",
+    "main.0a50951e.js.map": "/auroracreation-recruitment/static/js/main.0a50951e.js.map",
+    "787.28cb0dcd.chunk.js.map": "/auroracreation-recruitment/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd5d8ce8.css",
-    "static/js/main.bb5f41bc.js"
+    "static/js/main.0a50951e.js"
   ]
 }
