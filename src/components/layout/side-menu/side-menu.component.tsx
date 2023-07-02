@@ -28,7 +28,7 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
       <div className={styles.btn}>
         <IconButton
           onClick={onCloseSideMenu}
-          src='/icons/close.png'
+          src='./icons/close.png'
           alt='close-icon'></IconButton>
       </div>
       <SearchBar />
@@ -36,14 +36,14 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
         <Button>
           <TextIcon
             text='Zaloguj się'
-            src='/icons/login.png'
+            src='./icons/login.png'
             alt='login-icon'
           />
         </Button>
         <Button>
           <TextIcon
             text='Załóż konto'
-            src='/icons/new-user.png'
+            src='./icons/new-user.png'
             alt='new-user-icon'
           />
         </Button>
@@ -53,7 +53,7 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
         <TextIcon text='293939098' src='/icons/phone.png' alt='phone-icon' />
         <TextIcon
           text='kontakt@aurorabox.pl'
-          src='/icons/mail.png'
+          src='./icons/mail.png'
           alt='mail-icon'
         />
       </div>

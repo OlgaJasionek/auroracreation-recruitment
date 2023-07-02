@@ -17,7 +17,7 @@ const HeaderComponent = ({ onOpenSideMenu }: Props) => {
             <div className={styles.mobileMenu}>
               <IconButton
                 onClick={onOpenSideMenu}
-                src='/icons/menu.png'
+                src='./icons/menu.png'
                 alt='menu-icon'></IconButton>
             </div>
             <img src='./icons/logo.png' alt='logo' />
@@ -28,7 +28,7 @@ const HeaderComponent = ({ onOpenSideMenu }: Props) => {
             </div>
             <div className={styles.basket}>
               <IconButton
-                src='/icons/basket.png'
+                src='./icons/basket.png'
                 alt='basket-icon'
                 onClick={() => {}}></IconButton>
               <Counter quantity={2} />

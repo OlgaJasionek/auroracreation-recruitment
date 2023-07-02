@@ -10,12 +10,12 @@ const TopBar = () => {
           <div className={styles.contactData}>
             <TextIcon
               text='293939098'
-              src='/icons/phone.png'
+              src='./icons/phone.png'
               alt='phone-icon'
             />
             <TextIcon
               text='kontakt@aurorabox.pl'
-              src='/icons/mail.png'
+              src='./icons/mail.png'
               alt='mail-icon'
             />
           </div>
@@ -23,14 +23,14 @@ const TopBar = () => {
             <Button>
               <TextIcon
                 text='Zaloguj się'
-                src='/icons/login.png'
+                src='./icons/login.png'
                 alt='login-icon'
               />
             </Button>
             <Button>
               <TextIcon
                 text='Załóż konto'
-                src='/icons/new-user.png'
+                src='./icons/new-user.png'
                 alt='new user-icon'
               />
             </Button>

@@ -8,7 +8,7 @@ const SearchBar = () => {
         type='text'
         placeholder='Co chcesz kupić?'
       />
-      <img src='/icons/search.png' alt='search-icon' />
+      <img src='./icons/search.png' alt='search-icon' />
     </div>
   );
 };
