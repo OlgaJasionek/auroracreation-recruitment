@@ -1,0 +1,52 @@
+nav {
+  font-size: 14px;
+  border-bottom: 0.5px solid #d7d7d7;
+
+  @media (max-width: 910px) {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.mobileView {
+  font-size: 14px;
+  text-align: center;
+
+  li {
+    margin: 2rem 0;
+  }
+}
+
+.desktopView {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin: 1rem 2rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.link {
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.7s;
+  cursor: pointer;
+
+  &:hover {
+    color: pink;
+  }
+}
+
+.active {
+  color: pink;
+}

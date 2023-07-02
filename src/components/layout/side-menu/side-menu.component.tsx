@@ -8,17 +8,7 @@ import SearchBar from "../../search-bar/search-bar.component";
 import styles from "./side-menu.module.scss";
 import TextIcon from "../../text-icon/text-icon.component";
 import Button from "../../button/button.component";
-
-const navLinks = [
-  { name: "Kategorie", id: 1, path: "/" },
-  { name: "Nowości", id: 2, path: "/" },
-  { name: "Promocje", id: 3, path: "/" },
-  { name: "Wyprzedaże", id: 4, path: "/" },
-  { name: "Kolekcje sezony", id: 5, path: "/" },
-  { name: "Nasza oferta", id: 6, path: "/" },
-  { name: "Trendy 2018", id: 7, path: "/" },
-  { name: "Blog", id: 8, path: "/" },
-];
+import Menu from "../menu/menu.component";
 
 type Props = {
   isOpen: boolean;
@@ -26,8 +16,6 @@ type Props = {
 };
 
 const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
-  const [activeLinkId, setActiveLinkId] = useState<number>(4);
-
   useEffect(() => {
     lockScroll(isOpen);
   }, [isOpen]);
@@ -60,26 +48,7 @@ const SideMenu = ({ isOpen, onCloseSideMenu }: Props) => {
           />
         </Button>
       </div>
-      <nav className={styles.nav}>
-        <ul className={styles.list}>
-          {navLinks.map(link => (
-            <li
-              key={link.id}
-              onClick={() => {
-                onCloseSideMenu();
-                setActiveLinkId(link.id);
-              }}>
-              <a
-                href={link.path}
-                className={classnames(styles.link, {
-                  [styles.active]: activeLinkId === link.id,
-                })}>
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Menu isDesktop={false} onCloseSideMenu={onCloseSideMenu} />
       <div className={styles.contactData}>
         <TextIcon text='293939098' src='/icons/phone.png' alt='phone-icon' />
         <TextIcon

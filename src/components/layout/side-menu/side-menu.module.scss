@@ -42,40 +42,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  a {
-    display: block;
-    position: relative;
-    font-size: 12px;
-    margin: 20px;
-  }
-}
-
-.list {
-  text-align: center;
-
-  li {
-    margin: 2rem 0;
-  }
-}
-
-.link {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: color 0.7s;
-
-  &:hover {
-    color: pink;
-  }
-}
-
-.activeLink {
-  color: pink;
 }
 
 .contactData {
-  border-top: 0.5px solid #d7d7d7;
   display: flex;
   justify-content: center;
   align-items: center;
