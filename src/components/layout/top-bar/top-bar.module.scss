@@ -1,5 +1,7 @@
+@import "../../../../styles/colors";
+
 .wrapper {
-  border-bottom: 0.5px solid #d7d7d7;
+  border-bottom: 0.5px solid $gray-border-color;
 }
 
 .content {

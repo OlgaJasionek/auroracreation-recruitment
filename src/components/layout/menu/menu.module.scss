@@ -1,6 +1,8 @@
+@import "../../../../styles/colors";
+
 nav {
   font-size: 14px;
-  border-bottom: 0.5px solid #d7d7d7;
+  border-bottom: 0.5px solid $gray-border-color;
 
   @media (max-width: 910px) {
     flex: 1;
@@ -43,10 +45,10 @@ nav {
   cursor: pointer;
 
   &:hover {
-    color: pink;
+    color: $pink-color;
   }
 }
 
 .active {
-  color: pink;
+  color: $pink-color;
 }
