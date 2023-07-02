@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/auroracreation-recruitment/static/css/main.dd5d8ce8.css",
+    "main.js": "/auroracreation-recruitment/static/js/main.1d95b71b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/auroracreation-recruitment/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/auroracreation-recruitment/index.html",
+    "main.dd5d8ce8.css.map": "/auroracreation-recruitment/static/css/main.dd5d8ce8.css.map",
+    "main.1d95b71b.js.map": "/auroracreation-recruitment/static/js/main.1d95b71b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/auroracreation-recruitment/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd5d8ce8.css",
+    "static/js/main.1d95b71b.js"
+  ]
+}
