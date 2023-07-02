@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { lockScroll } from "../../../helpers/lockscroll";
 import IconButton from "../../icon-button/icon-button.component";

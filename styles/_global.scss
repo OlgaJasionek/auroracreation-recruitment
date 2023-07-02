@@ -1,10 +1,13 @@
-body {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
+* {
   font-family: "Abhaya Libre", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
 }
 
 ul {
